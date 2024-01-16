@@ -1,0 +1,3469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("32347321-a439-4a36-873b-994f1463e0e6",{name:"macbook"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>karateTest</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-08-20 04:09:09 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>create pet</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:36]"><span>[2:36]</span> <span>Search pet by petId</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:44]"><span>[3:44]</span> <span>Update name status pet</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:55]"><span>[4:55]</span> <span>search Pet by status</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karateTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Plan de pruebas</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">create pet</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2519</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;pet&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def getPetInformations = call read(&#39;classpath:helpers/helper.feature@name=createPetInformations&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">453</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.helper</div>
+      </div>
+      <div class="time-cell passed">400</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fakerObj =  new faker()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">77</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petId = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryName = fakerObj.name().name()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">301</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petName = &#39;doggie&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petPhotoUrls = &#39;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsId = fakerObj.number().digit()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsName = &#39;Juguetón&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetStatus = &#39;available&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">94</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{
+           &quot;id&quot;: #(getPetInformations.petId),
+           &quot;category&quot;: {
+                         &quot;id&quot;: #(getPetInformations.petCategoryId),
+                         &quot;name&quot;: &quot;#(getPetInformations.petCategoryName)&quot;,
+                        },
+           &quot;name&quot;: &quot;#(getPetInformations.petName)&quot;,
+           &quot;photoUrls&quot;: [
+                         &quot;#(getPetInformations.petPhotoUrls)&quot;,
+                        ],
+           &quot;tags&quot;: [
+                     {
+                       &quot;id&quot;: #(getPetInformations.PetTagsId),
+                       &quot;name&quot;: &quot;#(getPetInformations.PetTagsName)&quot;,
+                     }
+                   ],
+           &quot;status&quot;: &quot;#(getPetInformations.PetStatus)&quot;,
+ }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1949</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">16:09:05.558 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 244
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Jeffry Will&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;https:\/\/hips.hearstapps.com\/hmg-prod\/images\/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Juguetón&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+16:09:06.843 response time in milliseconds: 1283
+1 &lt; 200
+1 &lt; Date: Sun, 20 Aug 2023 21:09:07 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Jeffry Will&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Juguetón&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == getPetInformations.petId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:36]</span>
+                <span class="scenario-name">Search pet by petId</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>576</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getPetInformations = call read(&#39;classpath:helpers/helper.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">110</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.37.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.helper</div>
+      </div>
+      <div class="time-cell passed">88</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fakerObj =  new faker()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petId = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryName = fakerObj.name().name()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">76</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petName = &#39;doggie&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petPhotoUrls = &#39;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsId = fakerObj.number().digit()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsName = &#39;Juguetón&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.37.0.call">
+    <div class="step-container" id="0.37.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetStatus = &#39;available&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;pet/&quot; + getPetInformations.petId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">418</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">16:09:07.033 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/4
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:09:07.447 response time in milliseconds: 414
+1 &lt; 200
+1 &lt; Date: Sun, 20 Aug 2023 21:09:07 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Jeffry Will&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Juguetón&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == getPetInformations.petId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">16:09:07.455 [print] {
+  &quot;id&quot;: 4,
+  &quot;category&quot;: {
+    &quot;id&quot;: 0,
+    &quot;name&quot;: &quot;Jeffry Will&quot;
+  },
+  &quot;name&quot;: &quot;doggie&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Juguetón&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:44]</span>
+                <span class="scenario-name">Update name status pet</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>862</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getPetInformations = call read(&#39;classpath:helpers/helper.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">58</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.45.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.helper</div>
+      </div>
+      <div class="time-cell passed">47</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fakerObj =  new faker()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petId = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryName = fakerObj.name().name()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petName = &#39;doggie&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petPhotoUrls = &#39;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsId = fakerObj.number().digit()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsName = &#39;Juguetón&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.45.0.call">
+    <div class="step-container" id="0.45.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetStatus = &#39;available&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;pet/&quot; + getPetInformations.petId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field name = &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">133</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field status = &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">668</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">16:09:07.678 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet/4
+1 &gt; accept: application/json
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 21
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+1 &gt; Accept-Encoding: gzip,deflate
+name=sold&amp;status=sold
+
+16:09:08.328 response time in milliseconds: 650
+1 &lt; 200
+1 &lt; Date: Sun, 20 Aug 2023 21:09:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;4&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">16:09:08.330 [print] {
+  &quot;code&quot;: 200,
+  &quot;type&quot;: &quot;unknown&quot;,
+  &quot;message&quot;: &quot;4&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:55]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:55]</span>
+                <span class="scenario-name">search Pet by status</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1041</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:55]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getPetInformations = call read(&#39;classpath:helpers/helper.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.56.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.helper</div>
+      </div>
+      <div class="time-cell passed">28</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fakerObj =  new faker()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petId = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petCategoryName = fakerObj.name().name()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petName = &#39;doggie&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petPhotoUrls = &#39;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsId = fakerObj.number().digit()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetTagsName = &#39;Juguetón&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.56.0.call">
+    <div class="step-container" id="0.56.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def PetStatus = &#39;available&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;pet/findByStatus&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">991</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">16:09:08.389 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:09:09.372 response time in milliseconds: 983
+1 &lt; 200
+1 &lt; Date: Sun, 20 Aug 2023 21:09:09 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+[{&quot;id&quot;:9223372036854572259,&quot;category&quot;:{&quot;id&quot;:-10928166,&quot;name&quot;:&quot;veniam in amet officia&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;Ut dolor nisi&quot;,&quot;consectetur nulla exercitation esse in&quot;],&quot;tags&quot;:[{&quot;id&quot;:46174105,&quot;name&quot;:&quot;ipsum occaecat in cupidatat&quot;},{&quot;id&quot;:-97055673,&quot;name&quot;:&quot;dolor minim reprehenderit aliquip aliqua&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:87705905,&quot;category&quot;:{&quot;id&quot;:22032096,&quot;name&quot;:&quot;reprehenderit in minim&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;cillum Ut &quot;,&quot;et adipisicing consequat&quot;],&quot;tags&quot;:[{&quot;id&quot;:-14103627,&quot;name&quot;:&quot;reprehenderit&quot;},{&quot;id&quot;:47181501,&quot;name&quot;:&quot;occaecat&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572655,&quot;category&quot;:{&quot;id&quot;:-10633856,&quot;name&quot;:&quot;proident qui ea deserunt&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aute in velit Ut pariatur&quot;,&quot;id voluptate&quot;],&quot;tags&quot;:[{&quot;id&quot;:-22769704,&quot;name&quot;:&quot;consectetur adipisicing&quot;},{&quot;id&quot;:55433864,&quot;name&quot;:&quot;veniam est commodo&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572657,&quot;category&quot;:{&quot;id&quot;:-13896812,&quot;name&quot;:&quot;dolore nisi aliquip&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolor consectetur sed&quot;,&quot;officia exercitation laborum&quot;],&quot;tags&quot;:[{&quot;id&quot;:26986383,&quot;name&quot;:&quot;quis culpa officia&quot;},{&quot;id&quot;:36317247,&quot;name&quot;:&quot;et dolo&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572669,&quot;category&quot;:{&quot;id&quot;:-89957810,&quot;name&quot;:&quot;боря&quot;},&quot;name&quot;:&quot;кыца&quot;,&quot;photoUrls&quot;:[&quot;minim quis ex&quot;,&quot;sit consequat sed rep&quot;],&quot;tags&quot;:[{&quot;id&quot;:86649378,&quot;name&quot;:&quot;sint&quot;},{&quot;id&quot;:49570817,&quot;name&quot;:&quot;sit Duis velit&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:75854097,&quot;category&quot;:{&quot;id&quot;:66719630,&quot;name&quot;:&quot;id eiusmod incididunt cillum&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;nostrud nulla fugi&quot;,&quot;voluptate sit&quot;],&quot;tags&quot;:[{&quot;id&quot;:35794735,&quot;name&quot;:&quot;dolore Duis reprehenderit&quot;},{&quot;id&quot;:57237806,&quot;name&quot;:&quot;eiusmod tempor nisi ipsum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:33845545,&quot;category&quot;:{&quot;id&quot;:-13100367,&quot;name&quot;:&quot;deserunt aute irure&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolore reprehenderit adipisicing sed&quot;,&quot;tempor irure consectetur amet&quot;],&quot;tags&quot;:[{&quot;id&quot;:-43225306,&quot;name&quot;:&quot;laborum proident Excepteur&quot;},{&quot;id&quot;:-7466415,&quot;name&quot;:&quot;ut in cupidatat laboris&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572679,&quot;category&quot;:{&quot;id&quot;:62046841,&quot;name&quot;:&quot;incididunt enim exercitation&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aliquip cillum&quot;,&quot;aliquip in in do&quot;],&quot;tags&quot;:[{&quot;id&quot;:69730294,&quot;name&quot;:&quot;quis consequat ullamco ut&quot;},{&quot;id&quot;:-82496586,&quot;name&quot;:&quot;ex minim commodo aliqua veniam&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572686,&quot;category&quot;:{&quot;id&quot;:-54615846,&quot;name&quot;:&quot;mollit sunt&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ullamco nisi esse&quot;,&quot;commodo ea consectetur&quot;],&quot;tags&quot;:[{&quot;id&quot;:-32126711,&quot;name&quot;:&quot;incididunt dolore proident irure&quot;},{&quot;id&quot;:-35146812,&quot;name&quot;:&quot;ut elit non id reprehenderit&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:23437566,&quot;category&quot;:{&quot;id&quot;:-46393995,&quot;name&quot;:&quot;ex ea culpa&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ut ex veniam dolor&quot;,&quot;in aliquip&quot;],&quot;tags&quot;:[{&quot;id&quot;:91638732,&quot;name&quot;:&quot;Excepteur ea commodo esse&quot;},{&quot;id&quot;:42980181,&quot;name&quot;:&quot;nulla officia ut labore&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:777123,&quot;category&quot;:{&quot;id&quot;:777123,&quot;name&quot;:&quot;fish&quot;},&quot;name&quot;:&quot;Nemo&quot;,&quot;photoUrls&quot;:[&quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;,&quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;],&quot;tags&quot;:[{&quot;id&quot;:123,&quot;name&quot;:&quot;priff&quot;},{&quot;id&quot;:123,&quot;name&quot;:&quot;ribka&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:52931566,&quot;category&quot;:{&quot;id&quot;:91307171,&quot;name&quot;:&quot;sint aliqua&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ut culpa null&quot;,&quot;quis&quot;],&quot;tags&quot;:[{&quot;id&quot;:-40794559,&quot;name&quot;:&quot;velit proident nulla&quot;},{&quot;id&quot;:-14228534,&quot;name&quot;:&quot;ess&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572697,&quot;category&quot;:{&quot;id&quot;:26856961,&quot;name&quot;:&quot;eu adipisicing&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;quis do&quot;,&quot;nostrud &quot;],&quot;tags&quot;:[{&quot;id&quot;:-50727364,&quot;name&quot;:&quot;do&quot;},{&quot;id&quot;:-83165365,&quot;name&quot;:&quot;aliqua minim et cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572698,&quot;category&quot;:{&quot;id&quot;:-89557905,&quot;name&quot;:&quot;elit ipsum incididunt ullamco&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;consect&quot;,&quot;ex&quot;],&quot;tags&quot;:[{&quot;id&quot;:-9997927,&quot;name&quot;:&quot;id aute dolor ea&quot;},{&quot;id&quot;:50814242,&quot;name&quot;:&quot;cillum voluptate nostrud consequat&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:70119872,&quot;category&quot;:{&quot;id&quot;:93142102,&quot;name&quot;:&quot;Змея&quot;},&quot;name&quot;:&quot;Анаконда&quot;,&quot;photoUrls&quot;:[&quot;mollit&quot;,&quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-19037377,&quot;name&quot;:&quot;deserunt veniam nulla reprehenderit&quot;},{&quot;id&quot;:51503358,&quot;name&quot;:&quot;ullamco aliqua Excepteur cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:70119872000,&quot;category&quot;:{&quot;id&quot;:93142102,&quot;name&quot;:&quot;Заяц французский 2&quot;},&quot;name&quot;:&quot;LAPIN LAPIN&quot;,&quot;photoUrls&quot;:[&quot;mollit&quot;,&quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-19037377,&quot;name&quot;:&quot;deserunt veniam nulla reprehenderit&quot;},{&quot;id&quot;:51503358,&quot;name&quot;:&quot;ullamco aliqua Excepteur cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1711982,&quot;category&quot;:{&quot;id&quot;:52551857,&quot;name&quot;:&quot;non Lorem tempor&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;veniam&quot;,&quot;reprehenderit commodo proident occaecat&quot;],&quot;tags&quot;:[{&quot;id&quot;:-12689894,&quot;name&quot;:&quot;veniam mollit&quot;},{&quot;id&quot;:-27514803,&quot;name&quot;:&quot;sed ullamco ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572718,&quot;category&quot;:{&quot;id&quot;:-80998525,&quot;name&quot;:&quot;in deserunt&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ad&quot;,&quot;id reprehenderit&quot;],&quot;tags&quot;:[{&quot;id&quot;:-58645271,&quot;name&quot;:&quot;amet ea non eiusmod&quot;},{&quot;id&quot;:-4486230,&quot;name&quot;:&quot;ea elit pariatur Duis ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:22061989,&quot;category&quot;:{&quot;id&quot;:74991505,&quot;name&quot;:&quot;22222222222&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ea commodo magna consectetur&quot;,&quot;in id eiusmod&quot;],&quot;tags&quot;:[{&quot;id&quot;:65746043,&quot;name&quot;:&quot;dolor sint123&quot;},{&quot;id&quot;:-8134129,&quot;name&quot;:&quot;gled&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:85118363,&quot;category&quot;:{&quot;id&quot;:-40147695,&quot;name&quot;:&quot;sunt officia&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;consequat ex nisi sed&quot;,&quot;nostrud proident quis&quot;],&quot;tags&quot;:[{&quot;id&quot;:95590403,&quot;name&quot;:&quot;commodo&quot;},{&quot;id&quot;:-7638681,&quot;name&quot;:&quot;anim non&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:37326840,&quot;category&quot;:{&quot;id&quot;:95326727,&quot;name&quot;:&quot;proident officia&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolore ea sunt dolor&quot;,&quot;dolor officia aliquip&quot;],&quot;tags&quot;:[{&quot;id&quot;:-66063065,&quot;name&quot;:&quot;quis elit&quot;},{&quot;id&quot;:80111734,&quot;name&quot;:&quot;enim id&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:40010473,&quot;category&quot;:{&quot;id&quot;:-13430874,&quot;name&quot;:&quot;in fugiat ipsum&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;proident sed ut&quot;,&quot;aute laboris elit occaecat aliquip&quot;],&quot;tags&quot;:[{&quot;id&quot;:-64712721,&quot;name&quot;:&quot;ad&quot;},{&quot;id&quot;:40504054,&quot;name&quot;:&quot;in&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:24572652,&quot;category&quot;:{&quot;id&quot;:70314021,&quot;name&quot;:&quot;adipisicing dolore&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;magna dolor Ut in&quot;,&quot;in eiusm&quot;],&quot;tags&quot;:[{&quot;id&quot;:85643839,&quot;name&quot;:&quot;aliquip sit dolor&quot;},{&quot;id&quot;:-89364963,&quot;name&quot;:&quot;elit id reprehenderit eiusmod exercitation&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:24364310,&quot;category&quot;:{&quot;id&quot;:-12307344,&quot;name&quot;:&quot;kitten бфрмалейка&quot;},&quot;name&quot;:&quot;kitten1&quot;,&quot;photoUrls&quot;:[&quot;dolor in&quot;,&quot;occaecat dolore consectetur adipisicing&quot;],&quot;tags&quot;:[{&quot;id&quot;:-22679152,&quot;name&quot;:&quot;non ex&quot;},{&quot;id&quot;:33284191,&quot;name&quot;:&quot;sed pariatur in&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572741,&quot;category&quot;:{&quot;id&quot;:21263904,&quot;name&quot;:&quot;aliqua aute sunt qui tempor&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;esse ea qui&quot;,&quot;laboris pariatur Lorem&quot;],&quot;tags&quot;:[{&quot;id&quot;:-84416365,&quot;name&quot;:&quot;in dolore nostrud cillum ullamc&quot;},{&quot;id&quot;:46696362,&quot;name&quot;:&quot;Excepteur consectetur Ut dolor&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:23327731,&quot;category&quot;:{&quot;id&quot;:-92357313,&quot;name&quot;:&quot;reprehenderit ut nostrud ut&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;Lorem laboris&quot;,&quot;laboris&quot;],&quot;tags&quot;:[{&quot;id&quot;:89386643,&quot;name&quot;:&quot;elit esse cillum&quot;},{&quot;id&quot;:-23396785,&quot;name&quot;:&quot;minim consectetur&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:90369791,&quot;category&quot;:{&quot;id&quot;:-28594492,&quot;name&quot;:&quot;ad&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;nulla ipsum dolor&quot;,&quot;cillum&quot;],&quot;tags&quot;:[{&quot;id&quot;:16964237,&quot;name&quot;:&quot;velit aliquip occaecat voluptate&quot;},{&quot;id&quot;:-32143651,&quot;name&quot;:&quot;sed nulla sint&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572751,&quot;category&quot;:{&quot;id&quot;:-27322073,&quot;name&quot;:&quot;in nulla&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;laborum nostrud nisi&quot;,&quot;velit&quot;],&quot;tags&quot;:[{&quot;id&quot;:54262278,&quot;name&quot;:&quot;nostrud in elit do Excepteur&quot;},{&quot;id&quot;:78506224,&quot;name&quot;:&quot;pariatur eu ex&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572752,&quot;category&quot;:{&quot;id&quot;:182334,&quot;name&quot;:&quot;officia eiusmod&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aute sint qui ullamco&quot;,&quot;labore&quot;],&quot;tags&quot;:[{&quot;id&quot;:72234058,&quot;name&quot;:&quot;nostrud&quot;},{&quot;id&quot;:-24512131,&quot;name&quot;:&quot;exercitation fugiat laborum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:38480305,&quot;category&quot;:{&quot;id&quot;:-59161747,&quot;name&quot;:&quot;Duis voluptate consequat&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ex enim &quot;,&quot;nisi est&quot;],&quot;tags&quot;:[{&quot;id&quot;:49121599,&quot;name&quot;:&quot;non anim exercitation&quot;},{&quot;id&quot;:2672065,&quot;name&quot;:&quot;sint&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572763,&quot;category&quot;:{&quot;id&quot;:-66275959,&quot;name&quot;:&quot;Машка&quot;},&quot;name&quot;:&quot;Кошка&quot;,&quot;photoUrls&quot;:[&quot;Фотография питомца&quot;,&quot;http://mtdata.ru/u28/photo54AF/20246582584-0/original.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-53654232,&quot;name&quot;:&quot;sit veniam qui&quot;},{&quot;id&quot;:82159841,&quot;name&quot;:&quot;ullamco consequat esse adipisicing&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572764,&quot;category&quot;:{&quot;id&quot;:-66275959,&quot;name&quot;:&quot;Машенька&quot;},&quot;name&quot;:&quot;Кошки&quot;,&quot;photoUrls&quot;:[&quot;Фотография питомца&quot;,&quot;http://mtdata.ru/u28/photo54AF/20246582584-0/original.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-53654232,&quot;name&quot;:&quot;sit veniam qui&quot;},{&quot;id&quot;:82159841,&quot;name&quot;:&quot;ullamco consequat esse adipisicing&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572766,&quot;category&quot;:{&quot;id&quot;:63534551,&quot;name&quot;:&quot;consectetur Ut qui Excepteur&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;do ut ea voluptate&quot;,&quot;do&quot;],&quot;tags&quot;:[{&quot;id&quot;:26158029,&quot;name&quot;:&quot;nulla&quot;},{&quot;id&quot;:64442077,&quot;name&quot;:&quot;incididunt aliqua officia&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572773,&quot;category&quot;:{&quot;id&quot;:79893326,&quot;name&quot;:&quot;cupidatat est mollit eiusmod non&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;deserunt dolor&quot;,&quot;do eiusmod&quot;],&quot;tags&quot;:[{&quot;id&quot;:60944180,&quot;name&quot;:&quot;ex mag&quot;},{&quot;id&quot;:90780404,&quot;name&quot;:&quot;ut ad minim velit cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572775,&quot;category&quot;:{&quot;id&quot;:14693763,&quot;name&quot;:&quot;dolore laborum cillum&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;labore aliquip&quot;,&quot;fugiat dolor commodo mollit id&quot;],&quot;tags&quot;:[{&quot;id&quot;:-57621507,&quot;name&quot;:&quot;commodo cupidatat&quot;},{&quot;id&quot;:66737527,&quot;name&quot;:&quot;cupidatat proident ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572787,&quot;category&quot;:{&quot;id&quot;:56425022,&quot;name&quot;:&quot;dol&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;irure Duis aliquip&quot;,&quot;velit fugiat in&quot;],&quot;tags&quot;:[{&quot;id&quot;:8252994,&quot;name&quot;:&quot;dolor amet&quot;},{&quot;id&quot;:45116039,&quot;name&quot;:&quot;in ea quis&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572789,&quot;category&quot;:{&quot;id&quot;:45019581,&quot;name&quot;:&quot;ad proident&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;deserunt minim&quot;,&quot;deserunt tempor in ullamco voluptate&quot;],&quot;tags&quot;:[{&quot;id&quot;:-75980840,&quot;name&quot;:&quot;quis cupidatat&quot;},{&quot;id&quot;:78386937,&quot;name&quot;:&quot;in veniam commodo aliqua adipisicing&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572793,&quot;category&quot;:{&quot;id&quot;:26052472,&quot;name&quot;:&quot;quis labore id do&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;deserunt nostrud n&quot;,&quot;&quot;],&quot;tags&quot;:[{&quot;id&quot;:9084274,&quot;name&quot;:&quot;Ut ea cupidatat consectetur laboris&quot;},{&quot;id&quot;:84195358,&quot;name&quot;:&quot;sint aliquip consectetur&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572794,&quot;category&quot;:{&quot;id&quot;:95673763,&quot;name&quot;:&quot;et eiusm&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;laboris labore i&quot;,&quot;sint dolor consequat&quot;],&quot;tags&quot;:[{&quot;id&quot;:45098116,&quot;name&quot;:&quot;dolor Excepteur&quot;},{&quot;id&quot;:-51366881,&quot;name&quot;:&quot;eiusmod aute minim in&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2022000,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;bird&quot;},&quot;name&quot;:&quot;Star&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;shy&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:62751340,&quot;category&quot;:{&quot;id&quot;:-37441254,&quot;name&quot;:&quot;aute cillum voluptate veniam&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;mollit veniam&quot;,&quot;dolor enim reprehenderit&quot;],&quot;tags&quot;:[{&quot;id&quot;:91709679,&quot;name&quot;:&quot;anim adipisicing&quot;},{&quot;id&quot;:919209,&quot;name&quot;:&quot;sint anim&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:76621170,&quot;category&quot;:{&quot;id&quot;:16364966,&quot;name&quot;:&quot;Ut cupidatat velit irure minim&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolore quis&quot;,&quot;elit ea aliqua dolor adipisicing&quot;],&quot;tags&quot;:[{&quot;id&quot;:24591216,&quot;name&quot;:&quot;ullamco magna laborum ut&quot;},{&quot;id&quot;:52512638,&quot;name&quot;:&quot;sunt non Lorem&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:33377689,&quot;category&quot;:{&quot;id&quot;:-5871190,&quot;name&quot;:&quot;in voluptate velit proident&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;amet in&quot;,&quot;aute in&quot;],&quot;tags&quot;:[{&quot;id&quot;:-26593919,&quot;name&quot;:&quot;tempor eiusmod ipsum&quot;},{&quot;id&quot;:78722837,&quot;name&quot;:&quot;in sit ullamco aliqua qui&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572814,&quot;category&quot;:{&quot;id&quot;:-88881106,&quot;name&quot;:&quot;tempor qui consequat&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;nostrud ullamco ex ut&quot;,&quot;eiusmod dolor cupidatat culpa&quot;],&quot;tags&quot;:[{&quot;id&quot;:-83345648,&quot;name&quot;:&quot;in laboris&quot;},{&quot;id&quot;:-31224689,&quot;name&quot;:&quot;laborum non incididunt&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854572815,&quot;category&quot;:{&quot;id&quot;:76206334,&quot;name&quot;:&quot;magna ex veniam&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;nostrud magna ullamco deserunt&quot;,&quot;&quot;],&quot;tags&quot;:[{&quot;id&quot;:-98598948,&quot;name&quot;:&quot;sint fugiat aute occaecat&quot;},{&quot;id&quot;:98039582,&quot;name&quot;:&quot;aliqua sunt sed&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:82188160,&quot;category&quot;:{&quot;id&quot;:81640824,&quot;name&quot;:&quot;nisi exercitation reprehenderit dolore&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;proident eu enim&quot;,&quot;mollit cillum nisi&quot;],&quot;tags&quot;:[{&quot;id&quot;:6316356,&quot;name&quot;:&quot;laborum magn&quot;},{&quot;id&quot;:73149614,&quot;name&quot;:&quot;veniam fugiat amet si&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Jeffry Will&quot;},&quot;name&quot;:&quot;sold&quot;,&quot;photoUrls&quot;:[&quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Juguetón&quot;}],&quot;status&quot;:&quot;sold&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">16:09:09.385 [print] [
+  {
+    &quot;id&quot;: 9223372036854572259,
+    &quot;category&quot;: {
+      &quot;id&quot;: -10928166,
+      &quot;name&quot;: &quot;veniam in amet officia&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;Ut dolor nisi&quot;,
+      &quot;consectetur nulla exercitation esse in&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 46174105,
+        &quot;name&quot;: &quot;ipsum occaecat in cupidatat&quot;
+      },
+      {
+        &quot;id&quot;: -97055673,
+        &quot;name&quot;: &quot;dolor minim reprehenderit aliquip aliqua&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 87705905,
+    &quot;category&quot;: {
+      &quot;id&quot;: 22032096,
+      &quot;name&quot;: &quot;reprehenderit in minim&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;cillum Ut &quot;,
+      &quot;et adipisicing consequat&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -14103627,
+        &quot;name&quot;: &quot;reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 47181501,
+        &quot;name&quot;: &quot;occaecat&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572655,
+    &quot;category&quot;: {
+      &quot;id&quot;: -10633856,
+      &quot;name&quot;: &quot;proident qui ea deserunt&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aute in velit Ut pariatur&quot;,
+      &quot;id voluptate&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -22769704,
+        &quot;name&quot;: &quot;consectetur adipisicing&quot;
+      },
+      {
+        &quot;id&quot;: 55433864,
+        &quot;name&quot;: &quot;veniam est commodo&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572657,
+    &quot;category&quot;: {
+      &quot;id&quot;: -13896812,
+      &quot;name&quot;: &quot;dolore nisi aliquip&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolor consectetur sed&quot;,
+      &quot;officia exercitation laborum&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 26986383,
+        &quot;name&quot;: &quot;quis culpa officia&quot;
+      },
+      {
+        &quot;id&quot;: 36317247,
+        &quot;name&quot;: &quot;et dolo&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572669,
+    &quot;category&quot;: {
+      &quot;id&quot;: -89957810,
+      &quot;name&quot;: &quot;боря&quot;
+    },
+    &quot;name&quot;: &quot;кыца&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;minim quis ex&quot;,
+      &quot;sit consequat sed rep&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 86649378,
+        &quot;name&quot;: &quot;sint&quot;
+      },
+      {
+        &quot;id&quot;: 49570817,
+        &quot;name&quot;: &quot;sit Duis velit&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 75854097,
+    &quot;category&quot;: {
+      &quot;id&quot;: 66719630,
+      &quot;name&quot;: &quot;id eiusmod incididunt cillum&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;nostrud nulla fugi&quot;,
+      &quot;voluptate sit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 35794735,
+        &quot;name&quot;: &quot;dolore Duis reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 57237806,
+        &quot;name&quot;: &quot;eiusmod tempor nisi ipsum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 33845545,
+    &quot;category&quot;: {
+      &quot;id&quot;: -13100367,
+      &quot;name&quot;: &quot;deserunt aute irure&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore reprehenderit adipisicing sed&quot;,
+      &quot;tempor irure consectetur amet&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -43225306,
+        &quot;name&quot;: &quot;laborum proident Excepteur&quot;
+      },
+      {
+        &quot;id&quot;: -7466415,
+        &quot;name&quot;: &quot;ut in cupidatat laboris&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572679,
+    &quot;category&quot;: {
+      &quot;id&quot;: 62046841,
+      &quot;name&quot;: &quot;incididunt enim exercitation&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aliquip cillum&quot;,
+      &quot;aliquip in in do&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 69730294,
+        &quot;name&quot;: &quot;quis consequat ullamco ut&quot;
+      },
+      {
+        &quot;id&quot;: -82496586,
+        &quot;name&quot;: &quot;ex minim commodo aliqua veniam&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572686,
+    &quot;category&quot;: {
+      &quot;id&quot;: -54615846,
+      &quot;name&quot;: &quot;mollit sunt&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ullamco nisi esse&quot;,
+      &quot;commodo ea consectetur&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -32126711,
+        &quot;name&quot;: &quot;incididunt dolore proident irure&quot;
+      },
+      {
+        &quot;id&quot;: -35146812,
+        &quot;name&quot;: &quot;ut elit non id reprehenderit&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 23437566,
+    &quot;category&quot;: {
+      &quot;id&quot;: -46393995,
+      &quot;name&quot;: &quot;ex ea culpa&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ut ex veniam dolor&quot;,
+      &quot;in aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 91638732,
+        &quot;name&quot;: &quot;Excepteur ea commodo esse&quot;
+      },
+      {
+        &quot;id&quot;: 42980181,
+        &quot;name&quot;: &quot;nulla officia ut labore&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 777123,
+    &quot;category&quot;: {
+      &quot;id&quot;: 777123,
+      &quot;name&quot;: &quot;fish&quot;
+    },
+    &quot;name&quot;: &quot;Nemo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;,
+      &quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 123,
+        &quot;name&quot;: &quot;priff&quot;
+      },
+      {
+        &quot;id&quot;: 123,
+        &quot;name&quot;: &quot;ribka&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 52931566,
+    &quot;category&quot;: {
+      &quot;id&quot;: 91307171,
+      &quot;name&quot;: &quot;sint aliqua&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ut culpa null&quot;,
+      &quot;quis&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -40794559,
+        &quot;name&quot;: &quot;velit proident nulla&quot;
+      },
+      {
+        &quot;id&quot;: -14228534,
+        &quot;name&quot;: &quot;ess&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572697,
+    &quot;category&quot;: {
+      &quot;id&quot;: 26856961,
+      &quot;name&quot;: &quot;eu adipisicing&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;quis do&quot;,
+      &quot;nostrud &quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -50727364,
+        &quot;name&quot;: &quot;do&quot;
+      },
+      {
+        &quot;id&quot;: -83165365,
+        &quot;name&quot;: &quot;aliqua minim et cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572698,
+    &quot;category&quot;: {
+      &quot;id&quot;: -89557905,
+      &quot;name&quot;: &quot;elit ipsum incididunt ullamco&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;consect&quot;,
+      &quot;ex&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -9997927,
+        &quot;name&quot;: &quot;id aute dolor ea&quot;
+      },
+      {
+        &quot;id&quot;: 50814242,
+        &quot;name&quot;: &quot;cillum voluptate nostrud consequat&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 70119872,
+    &quot;category&quot;: {
+      &quot;id&quot;: 93142102,
+      &quot;name&quot;: &quot;Змея&quot;
+    },
+    &quot;name&quot;: &quot;Анаконда&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit&quot;,
+      &quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -19037377,
+        &quot;name&quot;: &quot;deserunt veniam nulla reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 51503358,
+        &quot;name&quot;: &quot;ullamco aliqua Excepteur cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 70119872000,
+    &quot;category&quot;: {
+      &quot;id&quot;: 93142102,
+      &quot;name&quot;: &quot;Заяц французский 2&quot;
+    },
+    &quot;name&quot;: &quot;LAPIN LAPIN&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit&quot;,
+      &quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -19037377,
+        &quot;name&quot;: &quot;deserunt veniam nulla reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 51503358,
+        &quot;name&quot;: &quot;ullamco aliqua Excepteur cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1711982,
+    &quot;category&quot;: {
+      &quot;id&quot;: 52551857,
+      &quot;name&quot;: &quot;non Lorem tempor&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;veniam&quot;,
+      &quot;reprehenderit commodo proident occaecat&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -12689894,
+        &quot;name&quot;: &quot;veniam mollit&quot;
+      },
+      {
+        &quot;id&quot;: -27514803,
+        &quot;name&quot;: &quot;sed ullamco ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572718,
+    &quot;category&quot;: {
+      &quot;id&quot;: -80998525,
+      &quot;name&quot;: &quot;in deserunt&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ad&quot;,
+      &quot;id reprehenderit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -58645271,
+        &quot;name&quot;: &quot;amet ea non eiusmod&quot;
+      },
+      {
+        &quot;id&quot;: -4486230,
+        &quot;name&quot;: &quot;ea elit pariatur Duis ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 22061989,
+    &quot;category&quot;: {
+      &quot;id&quot;: 74991505,
+      &quot;name&quot;: &quot;22222222222&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ea commodo magna consectetur&quot;,
+      &quot;in id eiusmod&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 65746043,
+        &quot;name&quot;: &quot;dolor sint123&quot;
+      },
+      {
+        &quot;id&quot;: -8134129,
+        &quot;name&quot;: &quot;gled&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 85118363,
+    &quot;category&quot;: {
+      &quot;id&quot;: -40147695,
+      &quot;name&quot;: &quot;sunt officia&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;consequat ex nisi sed&quot;,
+      &quot;nostrud proident quis&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 95590403,
+        &quot;name&quot;: &quot;commodo&quot;
+      },
+      {
+        &quot;id&quot;: -7638681,
+        &quot;name&quot;: &quot;anim non&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 37326840,
+    &quot;category&quot;: {
+      &quot;id&quot;: 95326727,
+      &quot;name&quot;: &quot;proident officia&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore ea sunt dolor&quot;,
+      &quot;dolor officia aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -66063065,
+        &quot;name&quot;: &quot;quis elit&quot;
+      },
+      {
+        &quot;id&quot;: 80111734,
+        &quot;name&quot;: &quot;enim id&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 40010473,
+    &quot;category&quot;: {
+      &quot;id&quot;: -13430874,
+      &quot;name&quot;: &quot;in fugiat ipsum&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;proident sed ut&quot;,
+      &quot;aute laboris elit occaecat aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -64712721,
+        &quot;name&quot;: &quot;ad&quot;
+      },
+      {
+        &quot;id&quot;: 40504054,
+        &quot;name&quot;: &quot;in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24572652,
+    &quot;category&quot;: {
+      &quot;id&quot;: 70314021,
+      &quot;name&quot;: &quot;adipisicing dolore&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;magna dolor Ut in&quot;,
+      &quot;in eiusm&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 85643839,
+        &quot;name&quot;: &quot;aliquip sit dolor&quot;
+      },
+      {
+        &quot;id&quot;: -89364963,
+        &quot;name&quot;: &quot;elit id reprehenderit eiusmod exercitation&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24364310,
+    &quot;category&quot;: {
+      &quot;id&quot;: -12307344,
+      &quot;name&quot;: &quot;kitten бфрмалейка&quot;
+    },
+    &quot;name&quot;: &quot;kitten1&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolor in&quot;,
+      &quot;occaecat dolore consectetur adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -22679152,
+        &quot;name&quot;: &quot;non ex&quot;
+      },
+      {
+        &quot;id&quot;: 33284191,
+        &quot;name&quot;: &quot;sed pariatur in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572741,
+    &quot;category&quot;: {
+      &quot;id&quot;: 21263904,
+      &quot;name&quot;: &quot;aliqua aute sunt qui tempor&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;esse ea qui&quot;,
+      &quot;laboris pariatur Lorem&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -84416365,
+        &quot;name&quot;: &quot;in dolore nostrud cillum ullamc&quot;
+      },
+      {
+        &quot;id&quot;: 46696362,
+        &quot;name&quot;: &quot;Excepteur consectetur Ut dolor&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 23327731,
+    &quot;category&quot;: {
+      &quot;id&quot;: -92357313,
+      &quot;name&quot;: &quot;reprehenderit ut nostrud ut&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;Lorem laboris&quot;,
+      &quot;laboris&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 89386643,
+        &quot;name&quot;: &quot;elit esse cillum&quot;
+      },
+      {
+        &quot;id&quot;: -23396785,
+        &quot;name&quot;: &quot;minim consectetur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 90369791,
+    &quot;category&quot;: {
+      &quot;id&quot;: -28594492,
+      &quot;name&quot;: &quot;ad&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;nulla ipsum dolor&quot;,
+      &quot;cillum&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 16964237,
+        &quot;name&quot;: &quot;velit aliquip occaecat voluptate&quot;
+      },
+      {
+        &quot;id&quot;: -32143651,
+        &quot;name&quot;: &quot;sed nulla sint&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572751,
+    &quot;category&quot;: {
+      &quot;id&quot;: -27322073,
+      &quot;name&quot;: &quot;in nulla&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;laborum nostrud nisi&quot;,
+      &quot;velit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 54262278,
+        &quot;name&quot;: &quot;nostrud in elit do Excepteur&quot;
+      },
+      {
+        &quot;id&quot;: 78506224,
+        &quot;name&quot;: &quot;pariatur eu ex&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572752,
+    &quot;category&quot;: {
+      &quot;id&quot;: 182334,
+      &quot;name&quot;: &quot;officia eiusmod&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aute sint qui ullamco&quot;,
+      &quot;labore&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 72234058,
+        &quot;name&quot;: &quot;nostrud&quot;
+      },
+      {
+        &quot;id&quot;: -24512131,
+        &quot;name&quot;: &quot;exercitation fugiat laborum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 38480305,
+    &quot;category&quot;: {
+      &quot;id&quot;: -59161747,
+      &quot;name&quot;: &quot;Duis voluptate consequat&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ex enim &quot;,
+      &quot;nisi est&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 49121599,
+        &quot;name&quot;: &quot;non anim exercitation&quot;
+      },
+      {
+        &quot;id&quot;: 2672065,
+        &quot;name&quot;: &quot;sint&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572763,
+    &quot;category&quot;: {
+      &quot;id&quot;: -66275959,
+      &quot;name&quot;: &quot;Машка&quot;
+    },
+    &quot;name&quot;: &quot;Кошка&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;Фотография питомца&quot;,
+      &quot;http://mtdata.ru/u28/photo54AF/20246582584-0/original.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -53654232,
+        &quot;name&quot;: &quot;sit veniam qui&quot;
+      },
+      {
+        &quot;id&quot;: 82159841,
+        &quot;name&quot;: &quot;ullamco consequat esse adipisicing&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572764,
+    &quot;category&quot;: {
+      &quot;id&quot;: -66275959,
+      &quot;name&quot;: &quot;Машенька&quot;
+    },
+    &quot;name&quot;: &quot;Кошки&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;Фотография питомца&quot;,
+      &quot;http://mtdata.ru/u28/photo54AF/20246582584-0/original.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -53654232,
+        &quot;name&quot;: &quot;sit veniam qui&quot;
+      },
+      {
+        &quot;id&quot;: 82159841,
+        &quot;name&quot;: &quot;ullamco consequat esse adipisicing&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572766,
+    &quot;category&quot;: {
+      &quot;id&quot;: 63534551,
+      &quot;name&quot;: &quot;consectetur Ut qui Excepteur&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;do ut ea voluptate&quot;,
+      &quot;do&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 26158029,
+        &quot;name&quot;: &quot;nulla&quot;
+      },
+      {
+        &quot;id&quot;: 64442077,
+        &quot;name&quot;: &quot;incididunt aliqua officia&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572773,
+    &quot;category&quot;: {
+      &quot;id&quot;: 79893326,
+      &quot;name&quot;: &quot;cupidatat est mollit eiusmod non&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;deserunt dolor&quot;,
+      &quot;do eiusmod&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 60944180,
+        &quot;name&quot;: &quot;ex mag&quot;
+      },
+      {
+        &quot;id&quot;: 90780404,
+        &quot;name&quot;: &quot;ut ad minim velit cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572775,
+    &quot;category&quot;: {
+      &quot;id&quot;: 14693763,
+      &quot;name&quot;: &quot;dolore laborum cillum&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;labore aliquip&quot;,
+      &quot;fugiat dolor commodo mollit id&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -57621507,
+        &quot;name&quot;: &quot;commodo cupidatat&quot;
+      },
+      {
+        &quot;id&quot;: 66737527,
+        &quot;name&quot;: &quot;cupidatat proident ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572787,
+    &quot;category&quot;: {
+      &quot;id&quot;: 56425022,
+      &quot;name&quot;: &quot;dol&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;irure Duis aliquip&quot;,
+      &quot;velit fugiat in&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 8252994,
+        &quot;name&quot;: &quot;dolor amet&quot;
+      },
+      {
+        &quot;id&quot;: 45116039,
+        &quot;name&quot;: &quot;in ea quis&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572789,
+    &quot;category&quot;: {
+      &quot;id&quot;: 45019581,
+      &quot;name&quot;: &quot;ad proident&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;deserunt minim&quot;,
+      &quot;deserunt tempor in ullamco voluptate&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -75980840,
+        &quot;name&quot;: &quot;quis cupidatat&quot;
+      },
+      {
+        &quot;id&quot;: 78386937,
+        &quot;name&quot;: &quot;in veniam commodo aliqua adipisicing&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572793,
+    &quot;category&quot;: {
+      &quot;id&quot;: 26052472,
+      &quot;name&quot;: &quot;quis labore id do&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;deserunt nostrud n&quot;,
+      &quot;&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 9084274,
+        &quot;name&quot;: &quot;Ut ea cupidatat consectetur laboris&quot;
+      },
+      {
+        &quot;id&quot;: 84195358,
+        &quot;name&quot;: &quot;sint aliquip consectetur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572794,
+    &quot;category&quot;: {
+      &quot;id&quot;: 95673763,
+      &quot;name&quot;: &quot;et eiusm&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;laboris labore i&quot;,
+      &quot;sint dolor consequat&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 45098116,
+        &quot;name&quot;: &quot;dolor Excepteur&quot;
+      },
+      {
+        &quot;id&quot;: -51366881,
+        &quot;name&quot;: &quot;eiusmod aute minim in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2022000,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;bird&quot;
+    },
+    &quot;name&quot;: &quot;Star&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;shy&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 62751340,
+    &quot;category&quot;: {
+      &quot;id&quot;: -37441254,
+      &quot;name&quot;: &quot;aute cillum voluptate veniam&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit veniam&quot;,
+      &quot;dolor enim reprehenderit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 91709679,
+        &quot;name&quot;: &quot;anim adipisicing&quot;
+      },
+      {
+        &quot;id&quot;: 919209,
+        &quot;name&quot;: &quot;sint anim&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 76621170,
+    &quot;category&quot;: {
+      &quot;id&quot;: 16364966,
+      &quot;name&quot;: &quot;Ut cupidatat velit irure minim&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore quis&quot;,
+      &quot;elit ea aliqua dolor adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 24591216,
+        &quot;name&quot;: &quot;ullamco magna laborum ut&quot;
+      },
+      {
+        &quot;id&quot;: 52512638,
+        &quot;name&quot;: &quot;sunt non Lorem&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 33377689,
+    &quot;category&quot;: {
+      &quot;id&quot;: -5871190,
+      &quot;name&quot;: &quot;in voluptate velit proident&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;amet in&quot;,
+      &quot;aute in&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -26593919,
+        &quot;name&quot;: &quot;tempor eiusmod ipsum&quot;
+      },
+      {
+        &quot;id&quot;: 78722837,
+        &quot;name&quot;: &quot;in sit ullamco aliqua qui&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572814,
+    &quot;category&quot;: {
+      &quot;id&quot;: -88881106,
+      &quot;name&quot;: &quot;tempor qui consequat&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;nostrud ullamco ex ut&quot;,
+      &quot;eiusmod dolor cupidatat culpa&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -83345648,
+        &quot;name&quot;: &quot;in laboris&quot;
+      },
+      {
+        &quot;id&quot;: -31224689,
+        &quot;name&quot;: &quot;laborum non incididunt&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854572815,
+    &quot;category&quot;: {
+      &quot;id&quot;: 76206334,
+      &quot;name&quot;: &quot;magna ex veniam&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;nostrud magna ullamco deserunt&quot;,
+      &quot;&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -98598948,
+        &quot;name&quot;: &quot;sint fugiat aute occaecat&quot;
+      },
+      {
+        &quot;id&quot;: 98039582,
+        &quot;name&quot;: &quot;aliqua sunt sed&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 82188160,
+    &quot;category&quot;: {
+      &quot;id&quot;: 81640824,
+      &quot;name&quot;: &quot;nisi exercitation reprehenderit dolore&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;proident eu enim&quot;,
+      &quot;mollit cillum nisi&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 6316356,
+        &quot;name&quot;: &quot;laborum magn&quot;
+      },
+      {
+        &quot;id&quot;: 73149614,
+        &quot;name&quot;: &quot;veniam fugiat amet si&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Jeffry Will&quot;
+    },
+    &quot;name&quot;: &quot;sold&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Juguetón&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
