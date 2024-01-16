@@ -12,9 +12,12 @@
 
 # 3. Instrucciones para ejecutar
 ** ubicarse en el archivo karateRuner que esta en el directorio "src/test/java/" clic derecho opcion "run".
-** Los reportes se generan y guardan el la ruta target y en el archivo "karate.log
 
-# 4. Información adicional
+# 4. Reportes
+  - Al finalizar la Ejecucion de la prueba en la consola se visualzia el resumen de las pruebas ejecutadas
+  - Los reportes se generan y guardan el la ruta "target" ahi encontrara generada una carpeta con el formato: karate_reports + "hash"
+    
+# 5. Información adicional
   - Tecnologia usada: Karate framework, junit5, javafaker, maven-surefire-plugin
     
 
