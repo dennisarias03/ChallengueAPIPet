@@ -4342,3 +4342,615 @@ name=sold&status=sold
 ]
  
 21:52:39.444 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karateTest.feature
+22:09:58.772 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:09:58.783 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1705374598783
+22:09:59.875 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:helpers/helper.feature - call by tag at line 7: name=createPetInformations
+22:10:00.645 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 245
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":4,"category":{"id":0,"name":"Lacy Bradtke"},"name":"doggie","photoUrls":["https:\/\/hips.hearstapps.com\/hmg-prod\/images\/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":"4","name":"Juguetón"}],"status":"available"}
+
+22:10:02.227 [main] DEBUG com.intuit.karate - response time in milliseconds: 1579
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:10:02 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Lacy Bradtke"},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":4,"name":"Juguetón"}],"status":"available"}
+
+22:10:02.316 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/4
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:10:02.709 [main] DEBUG com.intuit.karate - response time in milliseconds: 393
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:10:02 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Lacy Bradtke"},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":4,"name":"Juguetón"}],"status":"available"}
+
+22:10:02.717 [main] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "category": {
+    "id": 0,
+    "name": "Lacy Bradtke"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+  ],
+  "tags": [
+    {
+      "id": 4,
+      "name": "Juguetón"
+    }
+  ],
+  "status": "available"
+}
+ 
+22:10:02.908 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet/4
+1 > accept: application/json
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 21
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+name=sold&status=sold
+
+22:10:03.413 [main] DEBUG com.intuit.karate - response time in milliseconds: 505
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:10:03 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"4"}
+
+22:10:03.417 [main] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "4"
+}
+ 
+22:10:03.473 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:10:03.868 [main] DEBUG com.intuit.karate - response time in milliseconds: 394
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:10:03 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+[{"id":4,"category":{"id":0,"name":"Lacy Bradtke"},"name":"sold","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":4,"name":"Juguetón"}],"status":"sold"},{"id":100,"category":{"id":1,"name":"Rogue"},"name":"Catty","photoUrls":["Foto"],"tags":[{"id":0,"name":"string"}],"status":"sold"}]
+
+22:10:03.870 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4,
+    "category": {
+      "id": 0,
+      "name": "Lacy Bradtke"
+    },
+    "name": "sold",
+    "photoUrls": [
+      "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+    ],
+    "tags": [
+      {
+        "id": 4,
+        "name": "Juguetón"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 100,
+    "category": {
+      "id": 1,
+      "name": "Rogue"
+    },
+    "name": "Catty",
+    "photoUrls": [
+      "Foto"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "sold"
+  }
+]
+ 
+22:10:05.008 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karateTest.feature
+22:11:06.762 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:11:06.768 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1705374666768
+22:11:07.930 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:helpers/helper.feature - call by tag at line 7: name=createPetInformations
+22:11:08.556 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 250
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":4,"category":{"id":0,"name":"Dr. Akiko Denesik"},"name":"doggie","photoUrls":["https:\/\/hips.hearstapps.com\/hmg-prod\/images\/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":"0","name":"Juguetón"}],"status":"available"}
+
+22:11:09.344 [main] DEBUG com.intuit.karate - response time in milliseconds: 785
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:11:09 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Dr. Akiko Denesik"},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":0,"name":"Juguetón"}],"status":"available"}
+
+22:11:09.474 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/4
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:11:09.850 [main] DEBUG com.intuit.karate - response time in milliseconds: 376
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:11:09 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Dr. Akiko Denesik"},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":0,"name":"Juguetón"}],"status":"available"}
+
+22:11:09.857 [main] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "category": {
+    "id": 0,
+    "name": "Dr. Akiko Denesik"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "Juguetón"
+    }
+  ],
+  "status": "available"
+}
+ 
+22:11:10.042 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet/4
+1 > accept: application/json
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 21
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+name=sold&status=sold
+
+22:11:10.485 [main] DEBUG com.intuit.karate - response time in milliseconds: 443
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:11:10 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"4"}
+
+22:11:10.487 [main] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "4"
+}
+ 
+22:11:10.539 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:11:10.867 [main] DEBUG com.intuit.karate - response time in milliseconds: 327
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:11:10 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+[{"id":4,"category":{"id":0,"name":"Dr. Akiko Denesik"},"name":"sold","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":0,"name":"Juguetón"}],"status":"sold"},{"id":100,"category":{"id":1,"name":"Rogue"},"name":"Catty","photoUrls":["Foto"],"tags":[{"id":0,"name":"string"}],"status":"sold"}]
+
+22:11:10.869 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4,
+    "category": {
+      "id": 0,
+      "name": "Dr. Akiko Denesik"
+    },
+    "name": "sold",
+    "photoUrls": [
+      "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "Juguetón"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 100,
+    "category": {
+      "id": 1,
+      "name": "Rogue"
+    },
+    "name": "Catty",
+    "photoUrls": [
+      "Foto"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "sold"
+  }
+]
+ 
+22:11:11.981 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karateTest.feature
+22:22:39.762 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:22:39.766 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1705375359766
+22:22:40.858 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:helpers/helper.feature - call by tag at line 7: name=createPetInformations
+22:22:41.490 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 253
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":4,"category":{"id":0,"name":"Emerita Thompson Jr."},"name":"doggie","photoUrls":["https:\/\/hips.hearstapps.com\/hmg-prod\/images\/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":"5","name":"Juguetón"}],"status":"available"}
+
+22:22:42.957 [main] DEBUG com.intuit.karate - response time in milliseconds: 1463
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:22:43 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Emerita Thompson Jr."},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":5,"name":"Juguetón"}],"status":"available"}
+
+22:22:43.061 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/4
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:22:43.620 [main] DEBUG com.intuit.karate - response time in milliseconds: 559
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:22:43 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Emerita Thompson Jr."},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":5,"name":"Juguetón"}],"status":"available"}
+
+22:22:43.626 [main] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "category": {
+    "id": 0,
+    "name": "Emerita Thompson Jr."
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+  ],
+  "tags": [
+    {
+      "id": 5,
+      "name": "Juguetón"
+    }
+  ],
+  "status": "available"
+}
+ 
+22:22:43.765 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet/4
+1 > accept: application/json
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 21
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+name=sold&status=sold
+
+22:22:44.118 [main] DEBUG com.intuit.karate - response time in milliseconds: 353
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:22:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"4"}
+
+22:22:44.120 [main] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "4"
+}
+ 
+22:22:44.176 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:22:44.657 [main] DEBUG com.intuit.karate - response time in milliseconds: 481
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:22:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+[{"id":4,"category":{"id":0,"name":"Emerita Thompson Jr."},"name":"sold","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":5,"name":"Juguetón"}],"status":"sold"},{"id":100,"category":{"id":1,"name":"Rogue"},"name":"Catty","photoUrls":["Foto"],"tags":[{"id":0,"name":"string"}],"status":"sold"}]
+
+22:22:44.659 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4,
+    "category": {
+      "id": 0,
+      "name": "Emerita Thompson Jr."
+    },
+    "name": "sold",
+    "photoUrls": [
+      "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+    ],
+    "tags": [
+      {
+        "id": 5,
+        "name": "Juguetón"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 100,
+    "category": {
+      "id": 1,
+      "name": "Rogue"
+    },
+    "name": "Catty",
+    "photoUrls": [
+      "Foto"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "sold"
+  }
+]
+ 
+22:22:45.630 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karateTest.feature
+22:55:15.206 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:55:15.223 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1705377315223
+22:55:18.273 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:helpers/helper.feature - call by tag at line 7: name=createPetInformations
+22:55:19.517 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 244
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":4,"category":{"id":0,"name":"Valrie Mann"},"name":"doggie","photoUrls":["https:\/\/hips.hearstapps.com\/hmg-prod\/images\/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":"5","name":"Juguetón"}],"status":"available"}
+
+22:55:21.551 [main] DEBUG com.intuit.karate - response time in milliseconds: 2031
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:55:21 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Valrie Mann"},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":5,"name":"Juguetón"}],"status":"available"}
+
+22:55:21.986 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/4
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:55:22.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 624
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:55:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"category":{"id":0,"name":"Valrie Mann"},"name":"doggie","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":5,"name":"Juguetón"}],"status":"available"}
+
+22:55:22.621 [main] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "category": {
+    "id": 0,
+    "name": "Valrie Mann"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+  ],
+  "tags": [
+    {
+      "id": 5,
+      "name": "Juguetón"
+    }
+  ],
+  "status": "available"
+}
+ 
+22:55:23.216 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet/4
+1 > accept: application/json
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 21
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+name=sold&status=sold
+
+22:55:23.813 [main] DEBUG com.intuit.karate - response time in milliseconds: 597
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:55:23 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"4"}
+
+22:55:23.818 [main] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "4"
+}
+ 
+22:55:24.061 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:55:24.575 [main] DEBUG com.intuit.karate - response time in milliseconds: 512
+1 < 200
+1 < Date: Tue, 16 Jan 2024 03:55:24 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+[{"id":4,"category":{"id":0,"name":"Valrie Mann"},"name":"sold","photoUrls":["https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"],"tags":[{"id":5,"name":"Juguetón"}],"status":"sold"},{"id":100,"category":{"id":1,"name":"Rogue"},"name":"Catty","photoUrls":["Foto"],"tags":[{"id":0,"name":"string"}],"status":"sold"}]
+
+22:55:24.579 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4,
+    "category": {
+      "id": 0,
+      "name": "Valrie Mann"
+    },
+    "name": "sold",
+    "photoUrls": [
+      "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"
+    ],
+    "tags": [
+      {
+        "id": 5,
+        "name": "Juguetón"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 100,
+    "category": {
+      "id": 1,
+      "name": "Rogue"
+    },
+    "name": "Catty",
+    "photoUrls": [
+      "Foto"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "sold"
+  }
+]
+ 
+22:55:28.465 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/karateTest.feature

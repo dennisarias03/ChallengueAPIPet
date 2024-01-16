@@ -1,0 +1,8 @@
+Conclusiones
+
+1.- Karate nos permite automatizar API's; de esta manera optimizamos el tiempo de ejecución y de certificación.
+2.- Karate nos permite ejecutar escenarios online en caso de que las pruebas no funcionales tengan diferentes datos.
+3.- En el presente trabajo se realizaron pruebas correctas con respuesta al código 200, pero también se pueden crear.
+Para los diferentes códigos de respuesta (400, 500, 300, etc.).
+4.- Podemos comparar las respuestas con los resultados del request usando la validación match.
+5.- Karate nos permite trabajar con aplicaciones en formatos JSON y Xml.

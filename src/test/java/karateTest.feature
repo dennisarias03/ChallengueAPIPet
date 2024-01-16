@@ -32,7 +32,6 @@ Feature: Plan de pruebas
     Then status 200
     And match response.id == getPetInformations.petId
 
-
   Scenario: Search pet by petId
     * def getPetInformations = call read('classpath:helpers/helper.feature')
     * path "pet/" + getPetInformations.petId
