@@ -3,58 +3,76 @@ Feature: Plan de pruebas
   Background:
     Given url baseUrl
 
-  Scenario: create pet
+
+  Scenario Outline: Create a pet from CSV
     And path "pet"
     And header Content-Type = 'application/json'
-    And def getPetInformations = call read('classpath:helpers/helper.feature@name=createPetInformations')
     * def requestBody =
-      """ {
-            "id": #(getPetInformations.petId),
+      """{
+            "id": #(<petId>),
             "category": {
-                          "id": #(getPetInformations.petCategoryId),
-                          "name": "#(getPetInformations.petCategoryName)",
+                          "id": #(<petCategoryId>),
+                          "name": "#(<petCategoryName>)"
                          },
-            "name": "#(getPetInformations.petName)",
-            "photoUrls": [
-                          "#(getPetInformations.petPhotoUrls)",
-                         ],
+            "name": "#(<petName>)",
+            "photoUrls": ["#(<petPhotoUrls>)"],
             "tags": [
                       {
-                        "id": #(getPetInformations.PetTagsId),
-                        "name": "#(getPetInformations.PetTagsName)",
+                        "id": #(<PetTagsId>),
+                        "name": "#(<PetTagsName>)"
                       }
                     ],
-            "status": "#(getPetInformations.PetStatus)",
-  }
-    """
+            "status": "#(<PetStatus>)"
+      }"""
+    * print requestBody
+    And request requestBody
+    When method POST
+    Then status <StatusCode>
+    And match response.id == <petId>
+
+    Examples:
+      | read('classpath:helpers/DataPet2024.csv') |
+
+
+
+  Scenario: Create a pet from Json
+    And path "pet"
+    And header Content-Type = 'application/json'
+    * def requestBody = read('classpath:helpers/DataSchemaApiPet2024.json')
+    * print requestBody
     And request requestBody
     When method POST
     Then status 200
-    And match response.id == getPetInformations.petId
+    And match response.id == 5
 
-  Scenario: Search pet by petId
-    * def getPetInformations = call read('classpath:helpers/helper.feature')
-    * path "pet/" + getPetInformations.petId
+
+
+  Scenario Outline: Search pet by petId from CSV
+    * path "pet/" + <petId>
     When method GET
-    Then status 200
-    And match response.id == getPetInformations.petId
+    Then status <StatusCode>
+    And match response.id == <petId>
     Then print response
+    Examples:
+      | read('classpath:helpers/DataPet2024.csv') |
 
-  Scenario: Update name status pet
-    * def getPetInformations = call read('classpath:helpers/helper.feature')
-    * path "pet/" + getPetInformations.petId
+  Scenario Outline: Update name status pet from CSV
+    * path "pet/" + <petId>
     And header accept = 'application/json'
     And header Content-Type = 'application/x-www-form-urlencoded'
-    And form field name = 'sold'
-    And form field status = 'sold'
+    And form field name = '<petNewName>'
+    And form field status = '<petNewName>'
     When method post
-    Then status 200
+    Then status <StatusCode>
     Then print response
+    Examples:
+      | read('classpath:helpers/DataPet2024.csv') |
 
-  Scenario: search Pet by status
-    * def getPetInformations = call read('classpath:helpers/helper.feature')
+  Scenario Outline: search Pet by status from CSV
     * path "pet/findByStatus"
-    And param status = 'sold'
+    And param status = '<petNewName>'
     When method get
-    Then status 200
+    Then status <StatusCode>
     Then print response
+    Examples:
+      | read('classpath:helpers/DataPet2024.csv') |

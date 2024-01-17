@@ -1,0 +1,2 @@
+petId,petCategoryId,petCategoryName,petName,petPhotoUrls,PetTagsId,PetTagsName,PetStatus,StatusCode,petNewName
+4,0,felino,lucas,https://hips.hearstapps.com/image-1586966191.jpg,1,jugueton,available,200,sold

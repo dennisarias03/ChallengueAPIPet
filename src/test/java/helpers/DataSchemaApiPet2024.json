@@ -1,0 +1,16 @@
+{
+  "id": "#(5)",
+  "category": {
+    "id": "#(1)",
+    "name": "#(canino)"
+  },
+  "name": "#(bony)",
+  "photoUrls": ["#(https://hips.hearstapps.com/image-2.jpg)"],
+  "tags": [
+    {
+      "id": "#(1)",
+      "name": "#(travieso)"
+    }
+  ],
+  "status": "#(available)"
+}
